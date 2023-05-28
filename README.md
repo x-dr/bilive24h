@@ -22,7 +22,7 @@ source .bashrc
 
 ### 执行脚本
 ```shell
-wget
+wget https://raw.githubusercontent.com/x-dr/bilive24h/main/bilive.sh
 ```
 
 
