@@ -21,8 +21,8 @@ if [[ $rtmp =~ "rtmp://" ]];then
 fi
 
 # 定义视频存放目录
+echo -e "${yellow} 脚本会推流所设置目录下的所有视频 ${font}"
 read -p "输入你的视频存放目录(并且要绝对路径,默认/video): " folder
-read -p "脚本会推流该目录下的所有视频: " folder
 if [ ! $folder ];then
         folder="/video"
 fi
@@ -68,8 +68,8 @@ stream_stop(){
 
 # 开始菜单设置
 echo -e "${yellow} FFmpeg无人值守循环推流 ${font}"
-echo -e "${red} 请确定此脚本目前是在screen窗口内运行的! ${font}"
-echo -e "${red} 若未在screen窗口内请运行  screen -S bilive ${font}"
+echo -e "${red} 运行推流时请确定此脚本目前是在screen窗口内运行的! ${font}"
+echo -e "${red} 运行推流时若未在screen窗口内请先运行  screen -S bilive ${font}"
 echo -e "${green} 1.开始无人值守循环推流 ${font}"
 echo -e "${green} 2.停止推流 ${font}"
 start_menu(){
