@@ -8,6 +8,7 @@ font="\033[0m"
 stream_start(){
 # 定义推流地址和推流码
 echo -e "${yellow} 开始设置推流，使用默认选项直接回车 ${font}"
+echo -e "${yellow} ps：推流地址是b站我的直播，服务器地址和串流密钥连在一起中间无需空格和逗号 ${font}"
 read -p "※ 输入你的服务器地址和串流密钥(rtmp协议): " rtmp
 
 # 判断用户输入的地址是否合法
@@ -20,7 +21,8 @@ if [[ $rtmp =~ "rtmp://" ]];then
 fi
 
 # 定义视频存放目录
-read -p "输入你的视频存放目录(要绝对路径,默认/video): " folder
+read -p "输入你的视频存放目录(并且要绝对路径,默认/video): " folder
+read -p "脚本会推流该目录下的所有视频: " folder
 if [ ! $folder ];then
         folder="/video"
 fi
