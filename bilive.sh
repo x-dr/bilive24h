@@ -20,7 +20,7 @@ if [[ $rtmp =~ "rtmp://" ]];then
 fi
 
 # 定义视频存放目录
-read -p "输入你的视频存放目录(格式仅支持mp4,并且要绝对路径,默认/video): " folder
+read -p "输入你的视频存放目录(要绝对路径,默认/video): " folder
 if [ ! $folder ];then
         folder="/video"
 fi
