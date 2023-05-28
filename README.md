@@ -31,3 +31,5 @@ wget https://raw.githubusercontent.com/x-dr/bilive24h/main/bilive.sh
 ```shell
 bash bilive.sh
 ```
+> ps：推流地址是b站我的直播，服务器地址和串流密钥连在一起中间无需空格和逗号
+![1685276828190.png](https://s1.img.ink/2023/05/28/c60b9eb81f023.png)
