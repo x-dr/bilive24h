@@ -1,5 +1,6 @@
 # bilive24h
-7 * 24小时的直播间
+我搭建7 * 24小时的测试直播间：[http://live.bilibili.com/2504721](http://live.bilibili.com/2504721)
+
 
 ### 安装ffmpeg
 
